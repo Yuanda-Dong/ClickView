@@ -103,6 +103,8 @@ function playlistsReducer(playlists: Playlist[], action: PlaylistAction): Playli
           if (!p.videoIds.includes(action.vid)) {
             return { ...p, videoIds: [...p.videoIds, action.vid] };
           } else {
+            // shows up twice because of strict mode
+            alert("Playlist already contains the video");
             return p;
           }
         } else {
