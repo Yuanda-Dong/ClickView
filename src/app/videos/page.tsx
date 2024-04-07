@@ -1,7 +1,16 @@
+"use client";
+
+import VideoItem from "@/components/video-item";
+import { useVideos } from "../Context";
+
 export default function VideosPage() {
+  const videos = useVideos();
+
   return (
     <>
-      <h1>Videos route</h1>
+      {videos.map((v) => (
+        <VideoItem video={v} key={v.id} />
+      ))}
     </>
   );
 }

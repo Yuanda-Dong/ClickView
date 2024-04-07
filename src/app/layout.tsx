@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Container } from "react-bootstrap";
 import Navigation from "@/components/navigation";
-
 import "./globals.css";
-
 import "bootstrap/dist/css/bootstrap.min.css";
+import { PlaylistsProvider } from "./Context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navigation />
-        
-        <Container>
-          {children}
-        </Container>
+        <PlaylistsProvider>
+          <Container>{children}</Container>
+        </PlaylistsProvider>
       </body>
     </html>
   );

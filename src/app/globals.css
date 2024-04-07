@@ -8,3 +8,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.hover:hover{
+  background: #77B0AA;
+  cursor: pointer;
+}
