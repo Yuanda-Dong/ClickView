@@ -53,7 +53,7 @@ export default function VideosPage() {
               </Form.Select>
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="mt-3">
+            <Button variant="outline-primary" type="submit" className="mt-3" size="sm">
               Submit
             </Button>
           </Form>

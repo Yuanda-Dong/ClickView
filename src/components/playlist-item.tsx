@@ -23,7 +23,7 @@ export function PlaylistItem(props: PlaylistItemProps) {
         <p className="mb-0">{playlist.description}</p>
       </Col>
       <Col xs="12" md="1" className="mb-3">
-        <Button
+        <Button variant="outline-danger" size="sm"
           onClick={(e) => {
             e.stopPropagation();
             onClickInner();

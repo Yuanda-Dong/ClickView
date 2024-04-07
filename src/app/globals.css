@@ -9,7 +9,11 @@ a {
   text-decoration: none;
 }
 
-.hover:hover{
-  background: #77B0AA;
+.hover:hover {
+  background: #c0d6e8;
   cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
 }

@@ -28,11 +28,11 @@ export default function VideoItem(props: VideoItemProps) {
 
       {add ? (
         <Col xs="12" md="1" className="mb-3">
-          <Button onClick={onClick}>Add to Playlist</Button>
+          <Button onClick={onClick} variant="outline-primary" size="sm">Add to Playlist</Button>
         </Col>
       ) : (
         <Col xs="12" md="1" className="mb-3">
-          <Button onClick={onClick}>Remove</Button>
+          <Button onClick={onClick} variant="outline-danger">Remove</Button>
         </Col>
       )}
     </Row>

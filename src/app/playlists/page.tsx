@@ -38,7 +38,7 @@ export default function PlaylistsPage() {
         />
       ))}
 
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="outline-primary" onClick={handleShow}>
         Add playlist
       </Button>
 
@@ -58,7 +58,7 @@ export default function PlaylistsPage() {
               <Form.Control as="textarea" placeholder="Fun videos" rows={5} name="desc" />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="mt-3">
+            <Button variant="outline-primary" type="submit" className="mt-3" size="sm">
               Submit
             </Button>
           </Form>
